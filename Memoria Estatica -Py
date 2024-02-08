@@ -1,0 +1,15 @@
+from tkinter import simpledialog, Tk
+
+class MemoriaEstatica:
+    def main(self):
+        calificaciones = []
+        for i in range(5):
+            calificacion = simpledialog.askinteger("Calificación", f"Captura la calificación {i + 1}:")
+            calificaciones.append(calificacion)
+        print(calificaciones)
+
+if __name__ == "__main__":
+    root = Tk()
+    memoria_estatica = MemoriaEstatica()
+    memoria_estatica.main()
+    root.destroy()
